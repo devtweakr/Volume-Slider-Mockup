@@ -28,10 +28,10 @@ body.dark-mode {
 
 .slider {
   width: 170px;
-  height: 5px;
+  height: 6px;
   margin: 10px 15px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #444;
   /* Bluish background color */
   appearance: none;
   /* Remove default styling */
@@ -39,29 +39,38 @@ body.dark-mode {
   /* Remove outline on focus */
 }
 
+.slider:hover {
+  color: #028afa;
+}
+
 .slider::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: #1565c0;
+  width: 15px;
+  height: 15px;
+  background-color: #64b5f6;
   /* Bluish handle color */
-  /* Darker border color */
   border-radius: 50%;
   cursor: pointer;
   appearance: none;
   /* Remove default styling */
 }
 
+.slider::-webkit-slider-thumb:hover {
+  color: #028afa;
+}
+
 .slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background-color: #2196f3;
+  width: 15px;
+  height: 15px;
+  background-color: #64b5f6;
   /* Bluish handle color for Firefox */
-  border: 2px solid #1565c0;
-  /* Darker border color */
   border-radius: 50%;
   cursor: pointer;
   box-shadow: none;
   /* Remove default styling */
+}
+
+.slider::-moz-range-thumb:hover {
+  color: #028afa;
 }
 
 .speakers {
@@ -78,6 +87,6 @@ body.dark-mode {
 }
 
 .speaker:hover {
-  color: #42a5f5;
+  color: #028afa;
   /* Lighter bluish color on hover */
 }
