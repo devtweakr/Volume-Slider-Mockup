@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Slider Mockup</title>
+  <!-- Include Bootstrap CSS CDN for styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body class="dark-mode">
+  <!-- Add dark mode class to body -->
+  <div class="container">
+    <div class="volume-text">
+      <span id="volumePercentage">0</span>
+    </div>
+    <div class="volume-container">
+      <div class="speakers-down">
+        <i class="fas fa-volume-down speaker"></i>
+      </div>
+      <div class="volume-slider">
+        <input type="range" min="0" max="100" value="0" class="slider" id="volumeSlider">
+      </div>
+      <div class="speakers-up">
+        <i class="fas fa-volume-up speaker"></i>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
